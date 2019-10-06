@@ -20,7 +20,7 @@ module.exports = {
 ```console
 $ npm run dev
 ```
-5. Access the Server Api from localhost/3000
+5. Access the Server Api from localhost:3000
 
 ## Usage
 - ### For CREATING AN ACCOUNT

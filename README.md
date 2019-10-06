@@ -1,8 +1,8 @@
 
 # Authentication-System-Api
-###A Basic Authentication system built in Node.js
+### A Basic Authentication system built in Node.js
 
-##Installation & Setup
+## Installation & Setup
 1. Install [Node.js](https://nodejs.org "Node.js") and [MongoDB](https://www.mongodb.com).
 2. Clone this repository and install its dependencies
 ```console

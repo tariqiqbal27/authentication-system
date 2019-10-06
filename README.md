@@ -1,3 +1,4 @@
+
 # Authentication-System-Api
 ###A Basic Authentication system built in Node.js
 
@@ -76,7 +77,7 @@ GET /user
 }
 ```
 
-- ###For GETTING USER ID
+- ### For GETTING USER ID
 **Request**
 ```http
 GET /user/userid
@@ -97,7 +98,7 @@ POST /user/logout
 }
 ```
 
-- ###For CHANGING USER PASSWORD
+- ### For CHANGING USER PASSWORD
 **Request**
 ```http
 PATCH /user/change_password
@@ -117,7 +118,7 @@ PATCH /user/change_password
 }
 ```
 
-- ###For DELETING USER
+- ### For DELETING USER
 **Request**
 ```http
 DELETE /user/delete
@@ -130,9 +131,9 @@ DELETE /user/delete
 }
 ```
 
-##Exception Handling
-###Session Exception
-- ####If User is not Authenticated
+## Exception Handling
+### Session Exception
+- #### If User is not Authenticated
 **Response**
 ```json
 {
@@ -140,7 +141,7 @@ DELETE /user/delete
     "msg": "User not Authenticated"
 }
 ```
-- ####If User is Authenticated
+- #### If User is Authenticated
 **Response**
 ```json
 {
@@ -149,8 +150,8 @@ DELETE /user/delete
 }
 ```
 
-###Register Exception
-- ####if Password length is less than 8
+### Register Exception
+- #### if Password length is less than 8
 **Response**
 ```json
 {
@@ -158,7 +159,7 @@ DELETE /user/delete
     "msg": "Password length must be greater than 7"
 }
 ```
-- ####if Email Already registed
+- #### if Email Already registered
 **Response**
 ```json
 {
@@ -175,8 +176,8 @@ DELETE /user/delete
 }
 ```
 
-###Login Exception
-- ####If Email Or Password are wrong
+### Login Exception
+- #### If Email Or Password are wrong
 **Response**
 ```json
 {
@@ -184,8 +185,8 @@ DELETE /user/delete
     "msg": "Email & password wrong"
 }
 ```
-###Change Password
-- ####if Old password is wrong
+### Change Password
+- #### if Old password is wrong
 **Response**
 ```json
 {
@@ -193,8 +194,8 @@ DELETE /user/delete
     "msg": "Incorrect Account Password"
 }
 ```
-- ####if New password and Old password are same
-**Response**
+- #### if New password and Old password are same
+ **Response**
 ```json
 {
     "code": "AUTH_PASSWORD_SAME",

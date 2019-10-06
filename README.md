@@ -61,7 +61,7 @@ POST /login
 }
 ```
 
-- ###For GETTING AUTHENTICATED USER DATA
+- ### For GETTING AUTHENTICATED USER DATA
 **Request**
 ```http
 GET /user
